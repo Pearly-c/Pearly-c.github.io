@@ -1,0 +1,170 @@
+/* ======================== Google Fonts ========================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300;400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap'); */
+
+
+/* ======================== Global styles ========================*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;  
+    font-family: 'Averia Serif Libre', sans-serif;
+}
+
+/* span,
+li,
+p,
+a{
+    font-family: 'Poppins', sans-serif; 
+} */
+
+
+/* ======================== Variables ========================*/
+:root{
+    --light-blue: #03a9f4;
+    --lighter-blue: lightblue;
+    --dark-blue: #003147;
+    --darker-blue: #081921;
+    --white: #fff;
+}
+
+/* ======================== Body ========================*/
+body{
+    background: var(--lighter-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* ======================== Full container start ========================*/
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px;
+    background: var(--white);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 35px rgba(0,0,0,0.1);
+}
+/* ======================== Full container end ========================*/
+
+/* ======================== Left side details start ========================*/
+.container .left_side{
+    position: relative;
+    background: var(--dark-blue);
+    padding: 40px;
+}
+.profileText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+}
+.profileText .imgBx{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profileText .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 
+.profileText h2{
+    color: var(--white);
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.profileText h2 span{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+.contactInfo{
+    padding-top: 40px;
+}
+.contactInfo .title{
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contactInfo ul{
+    position: relative;
+}
+.contactInfo ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contactInfo ul li .icon{
+    display: inline-block;
+    width: 29px;
+    font-size: 18px;
+    color: var(--light-blue);
+
+}
+.contactInfo ul li span{
+    color: var(--white);
+    font-weight: 300;
+}
+.contactInfo.education li{
+    margin-bottom: 15px;
+}
+.contactInfo.education h5{
+    color: var(--light-blue);
+    font-weight: 500;
+    padding-bottom: 0.7em;
+}
+.contactInfo.education h4:nth-child(2){
+    color: var(--white);
+    font-weight: 500;
+}
+.contactInfo.education h4{
+    color: var(--white);
+    font-weight: 300;
+    padding-bottom: 0.7em;
+}
+.contactInfo.language .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: var(--darker-blue);
+    display: block;
+    margin-top: 5px;
+}
+.contactInfo.language .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: var(--light-blue);
+}
+
+/* ======================== Left side details end ========================*/
+
+
+/* ======================== Right side details start ========================*/
+.container .right_side{
+    position: relative;
+    background: var(--white);
+    padding: 40px;
+}
+/* ======================== Right side details end ========================*/
