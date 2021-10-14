@@ -27,6 +27,7 @@ a{
     --lighter-blue: lightblue;
     --dark-blue: #003147;
     --darker-blue: #081921;
+    --pale-grey: #848c99;
     --dark-grey: #333;
     --light-grey: #848c90;
     --white: #fff;
@@ -212,6 +213,16 @@ p{
     font-style: italic;
 }
 .about .duties li{
-    padding-bottom: 5px;
+    margin: 5px 0;
+}
+
+.prof_skills ul{ 
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.prof_skills ul li{
+    color: var(--dark-grey);
+    font-weight: 500;
+    margin: 5px 0;
 }
 /* ======================== Right side details end ========================*/
