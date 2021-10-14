@@ -22,10 +22,13 @@ a{
 
 /* ======================== Variables ========================*/
 :root{
+    --pale-blue: #2a7da2;
     --light-blue: #03a9f4;
     --lighter-blue: lightblue;
     --dark-blue: #003147;
     --darker-blue: #081921;
+    --dark-grey: #333;
+    --light-grey: #848c90;
     --white: #fff;
 }
 
@@ -166,5 +169,49 @@ body{
     position: relative;
     background: var(--white);
     padding: 40px;
+}
+.about{
+    margin-bottom: 50px;
+}
+.about:last-child{
+    margin-bottom: 0;
+}
+.title2{
+    color: var(--dark-blue);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+p{
+    color: var(--dark-grey);
+}
+.about .box{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.about .box .year{
+    min-width: 150px;
+}
+.about .box .year h5{
+    text-transform: uppercase;
+    color: var(--light-grey);
+    font-weight: 600;
+}
+.about .box .text .company{
+    text-transform: uppercase;
+    color: var(--pale-blue);
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+.about .box .text .role{
+    text-transform: uppercase;
+    color: var(--darker-blue);
+    font-size: 16px;
+    padding-bottom: 5px;
+    font-style: italic;
+}
+.about .duties li{
+    padding-bottom: 5px;
 }
 /* ======================== Right side details end ========================*/
