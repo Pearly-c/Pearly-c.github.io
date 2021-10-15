@@ -129,6 +129,11 @@ body{
     color: var(--white);
     font-weight: 300;
 }
+.contactInfo ul li span a{
+    color: var(--white);
+    font-weight: 300;
+    text-decoration: none;
+}
 .contactInfo.education li{
     margin-bottom: 15px;
 }
