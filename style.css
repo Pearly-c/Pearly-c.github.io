@@ -60,7 +60,7 @@ body{
 .container .left_side{
     position: relative;
     background: var(--dark-blue);
-    padding: 35px;
+    padding: 30px;
 }
 .profileText{
     position: relative;
