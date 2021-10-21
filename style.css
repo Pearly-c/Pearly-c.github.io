@@ -229,7 +229,6 @@ p{
     grid-template-columns: repeat(1,1fr);
 }
 .prof_skills ul li{
-    color: var(--dark-grey);
     font-weight: 500;
     margin: 5px 0;
     list-style: none;
